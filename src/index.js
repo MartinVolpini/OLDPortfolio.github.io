@@ -55,5 +55,8 @@ app.post('/email', (req, res)=>{
     
 })
 
+app.get(`/`,(req,res)=>{
+    res.send({msg:"Hola TinCode"})
+})
 
 app.listen( app.get('port'), () => { console.log(`EXPRESS puerto ${app.get('port')}`.yellow) } );
